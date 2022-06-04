@@ -201,6 +201,96 @@
   }
 }
 
+.service .container {
+  padding: 150px 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 35px;
+}
+
+.service .container .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  justify-items: center;
+  grid-row-gap: 60px;
+  max-width: 1230px;
+  width: 100%;
+  min-height: 440px;
+  -webkit-box-shadow: 0 0 10px 2px rgba(173, 173, 173, 0.2);
+          box-shadow: 0 0 10px 2px rgba(173, 173, 173, 0.2);
+  border-radius: 5px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.service .container .card .card__img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.service .container .card .card__content {
+  text-align: center;
+}
+
+.service .container .card .card__content .card__content__title {
+  color: #02242e;
+  font-size: 26px;
+  font-family: 'Poppins';
+}
+
+.service .container .card .card__content .card__content__copy {
+  color: #9a9fa2;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .service .container .card {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-column-gap: 20px;
+  }
+  .service .container .card .card__img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .service .container .card .card__order {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .service .container .card .card__content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: left;
+    max-width: 480px;
+  }
+  .service .container .card .card__content .card__content__title {
+    font-size: 30px;
+  }
+  .service .container .card .card__content__order {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
