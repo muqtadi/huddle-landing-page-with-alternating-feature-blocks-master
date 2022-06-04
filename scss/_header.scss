@@ -1,7 +1,10 @@
+
 .header{
   background-color: rgb(237, 251, 254);
 
   .container{
+    position: relative;
+    z-index: 2;
     height: 80px;
     display: flex;
     flex-wrap: wrap;
