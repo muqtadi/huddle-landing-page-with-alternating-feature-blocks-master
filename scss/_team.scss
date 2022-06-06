@@ -1,4 +1,6 @@
 .team{
+  transform: translateY(50%);
+
   .container{
 
     .team__card{
@@ -12,6 +14,7 @@
       min-height: 280px;
       box-shadow: 0 0 10px 2px rgba(107, 106, 106, 0.2);
       border-radius: 15px;
+      background-color: #fff;
       padding: 40px;
       margin: 0 auto;
 
