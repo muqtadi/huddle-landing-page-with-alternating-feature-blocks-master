@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .header__logo{width: 180px; height: auto;}
+    .header__logo img{display: block; width: 180px; height: auto;}
     .header__link{
       width: 160px;
       height: 40px;

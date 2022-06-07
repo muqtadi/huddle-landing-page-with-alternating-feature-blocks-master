@@ -40,7 +40,8 @@
           align-items: center;
 }
 
-.header .container .header__logo {
+.header .container .header__logo img {
+  display: block;
   width: 180px;
   height: auto;
 }
