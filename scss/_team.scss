@@ -18,7 +18,7 @@
       padding: 40px;
       margin: 0 auto;
 
-      .team__card__title{color: rgb(12, 42, 52); font-family: 'Poppins'; font-size: 35px; text-align: center;}
+      .team__card__title{color: rgb(12, 42, 52); font-family: 'Poppins'; font-size: 30px; text-align: center;}
       .team__card__link{
         display: flex;
         align-items: center;
@@ -34,6 +34,17 @@
         text-decoration: none;
         border-radius: 50px;
         &:hover{background-color: rgb(255, 155, 219);}
+      }
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .team{
+    .container{
+      .team__card{
+        .team__card__title{font-size: 24px;}
+        .team__card__link{height: 45px; font-size: 14px;}
       }
     }
   }
