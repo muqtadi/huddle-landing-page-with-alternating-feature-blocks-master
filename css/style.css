@@ -148,7 +148,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 16px;
-  width: 260px;
+  max-width: 260px;
   height: 40px;
   background-color: #fe52c0;
 }
@@ -160,7 +160,7 @@
 .hero .container .hero__img {
   max-width: 680px;
   width: 100%;
-  min-height: 120px;
+  min-height: auto;
 }
 
 @media (min-width: 768px) {
@@ -221,13 +221,14 @@
   -webkit-box-shadow: 0 0 10px 2px rgba(173, 173, 173, 0.2);
           box-shadow: 0 0 10px 2px rgba(173, 173, 173, 0.2);
   border-radius: 5px;
-  padding: 50px;
+  padding: 30px;
   margin: 0 auto;
 }
 
 .service .container .card .card__img {
   max-width: 400px;
   width: 100%;
+  min-height: 100px;
 }
 
 .service .container .card .card__content {
@@ -236,7 +237,7 @@
 
 .service .container .card .card__content .card__content__title {
   color: #02242e;
-  font-size: 26px;
+  font-size: 36px;
   font-family: 'Poppins';
 }
 
@@ -244,6 +245,12 @@
   color: #9a9fa2;
   line-height: 28px;
   margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+  .service .container .card .card__content .card__content__title {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1024px) {

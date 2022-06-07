@@ -15,20 +15,31 @@
       min-height: 440px;
       box-shadow: 0 0 10px 2px rgba(173, 173, 173, 0.2);
       border-radius: 5px;
-      padding: 50px;
+      padding: 30px;
       margin: 0 auto;
 
-      .card__img{max-width: 400px; width: 100%;}
+      .card__img{max-width: 400px; width: 100%; min-height: 100px;}
       .card__content{
         text-align: center;
 
-        .card__content__title{color: rgb(2, 36, 46); font-size: 26px; font-family: 'Poppins';}
+        .card__content__title{color: rgb(2, 36, 46); font-size: 36px; font-family: 'Poppins';}
         .card__content__copy{color: rgb(154, 159, 162); line-height: 28px; margin-top: 20px;}
       }
     }
   }
 }
 
+@media(max-width: 375px){
+  .service{
+    .container{
+      .card{
+        .card__content{
+          .card__content__title{font-size: 24px;}
+        }
+      }
+    }
+  }
+}
 @media(min-width: 1024px){
   .service{
     .container{
